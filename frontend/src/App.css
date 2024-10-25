@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #007bff;
+  --hover-primary-color: #0056b3;
+  --success-color: #28a745;
+  --hover-success-color: #218838;
+  --font-color: #333;
+  --background-light: #f9f9f9;
+  --border-color: #ccc;
+  --file-background: #e9ecef;
+}
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: var(--background-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.upload-container h1 {
+  color: var(--font-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.file-input-label,
+button {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.file-input-label:hover,
+button:hover {
+  background-color: var(--hover-primary-color);
+}
+
+.file-display,
+#occurence {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  background-color: var(--file-background);
+  border-radius: 4px;
+  text-align: left;
+}
+
+table {
+  width: 90%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+button {
+  background-color: var(--success-color);
+}
+
+button:hover {
+  background-color: var(--hover-success-color);
+}
+
+.desc {
+  font-style: italic;
+}
