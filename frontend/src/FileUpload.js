@@ -20,6 +20,7 @@ function FileUpload() {
 
   const handleUpload = async () => {
     setLoading(true);
+    setErrors();
     const formData = new FormData();
     formData.append("file", file);
     formData.append("occurence", occurence);
@@ -68,7 +69,7 @@ function FileUpload() {
         <button onClick={handleUpload}>
           {!loading ? "Upload" : "traitement en cours"}
         </button>
-        <span>{errors}</span>
+        <span>{errors && errors}</span>
       </div>
 
       {results.length > 0 && (
